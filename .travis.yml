@@ -6,3 +6,11 @@ matrix:
 notifications:
   email:
     - delfosk9@gmail.com
+addons:
+  sonarcloud:
+    organization: "delfosk_GO_API" # the key of the org you chose at step #3
+    token:
+      secure: "dcf3447dd0fe782d07c5821a306d0639678af51e" # encrypted value of your token
+script:
+  # other script steps might be done before running the actual analysis
+  - sonar-scanner
